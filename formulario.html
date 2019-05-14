@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Validacion JS</title>
+        <script type="text/javascript">
+        function validateText(campo) {
+        var RegExPattern = /([a-zA-Z])/;
+        var errorMessage = 'Verifica que sea texto';
+        if ((campo.value.match(RegExPattern)) && (campo.value!='')) {
+            alert('Bien hecho!');
+        } else {
+            alert(errorMessage);
+        }
+        }
+        </script>
+
+    </head>
+    <body>
+        <h1>Validacion</h1>
+
+        <form name="formulario" onsubmit="return validateForm()">
+          <label>Nombre</label><br>
+            <input type="text" name="texto" onblur="validateText(this)";><br>
+            <br>
+        <label>Precio</label><br>
+            <input type="number" name="numero" onsubmit="validateNumber(this);"><br>
+            <br>
+            <button name="button" onsubmit="validateEnviar(this);">Enviar</button><br>
+        </form>
+
+        <script type="text/javascript">
+        function validateNumber(camp) {
+        var RegExPattern = /([0-9]+)/;
+        var errorMessage = 'Verifica que sea numero';
+        if ((camp.value.match(RegExPattern)) && (camp.value!='')) {
+            alert('exelente trabajo');
+        } else {
+            alert(error);
+           }
+        }
+        </script>
+    </body>
+
+</html>
