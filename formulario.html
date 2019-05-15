@@ -1,9 +1,13 @@
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
     <head>
+
         <meta charset="utf-8">
-        <title>Validacion JS</title>
+   <LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
+
+        <title>Validacion </title>
         <script type="text/javascript">
         function validateText(campo) {
         var RegExPattern = /([a-zA-Z])/;
@@ -18,14 +22,14 @@
 
     </head>
     <body>
-        <h1>Validacion</h1>
-
-        <form name="formulario" onsubmit="return validateForm()">
-          <label>Nombre</label><br>
-            <input type="text" name="texto" onblur="validateText(this)";><br>
+       <h1>Validacion</h1>
+              
+        <form  action="insert.php" name="formulario" onsubmit="return validateForm()">
+          <label>Nombre del Producro</label><br>
+            <input type="text" name="product" onblur="validateText(this)";><br>
             <br>
         <label>Precio</label><br>
-            <input type="number" name="numero" onsubmit="validateNumber(this);"><br>
+            <input type="number" name="price" onsubmit="validateNumber(this);"><br>
             <br>
             <button name="button" onsubmit="validateEnviar(this);">Enviar</button><br>
         </form>
@@ -40,7 +44,11 @@
             alert(error);
            }
         }
-        </script>
+      
+ </script>
+
+     
+    
     </body>
 
 </html>

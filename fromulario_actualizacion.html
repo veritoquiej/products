@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+	   <LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
+
 	<title>formulario_actualizacion</title>
 </head>
 <body>
+	h
+	<h1>ACTUALIZAR</h1>
   <form method="post" action="CostumerUpdate">
             <input name="id" type="hidden" value="${costumer.id}">
             <input name="name" value="${costumer.name}" type="text" required minlength="2">
+            <br>
             <button>Actualizar</button>
         </form>
             
